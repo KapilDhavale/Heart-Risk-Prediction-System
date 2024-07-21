@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Heart Disease Prediction System using Random Forest</h1>
+    <form action="{{ url_for('predict') }}" method="post">
+        <div class="container">
+            <div class="column">
+                <!-- Column 1 Inputs -->
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required>
+
+                <label for="sex">Sex:</label>
+                <input type="text" id="sex" name="sex" required>
+
+                <label for="cp">Chest Pain Type:</label>
+                <input type="text" id="cp" name="cp" required>
+
+                <label for="trestbps">Resting Blood Pressure:</label>
+                <input type="text" id="trestbps" name="trestbps" required>
+
+                <label for="chol">Serum Cholesterol:</label>
+                <input type="text" id="chol" name="chol" required>
+
+                <label for="fbs">Fasting Blood Sugar:</label>
+                <input type="text" id="fbs" name="fbs" required>
+            </div>
+
+            <div class="column">
+                <!-- Column 2 Inputs -->
+                <label for="restecg">Resting Electrocardiographic Results:</label>
+                <input type="text" id="restecg" name="restecg" required>
+
+                <label for="thalach">Maximum Heart Rate Achieved:</label>
+                <input type="text" id="thalach" name="thalach" required>
+
+                <label for="exang">Exercise Induced Angina:</label>
+                <input type="text" id="exang" name="exang" required>
+
+                <label for="oldpeak">Oldpeak:</label>
+                <input type="text" id="oldpeak" name="oldpeak" required>
+
+                <label for="slope">Slope of Peak Exercise ST Segment:</label>
+                <input type="text" id="slope" name="slope" required>
+
+                <label for="ca">Number of Major Vessels Colored:</label>
+                <input type="text" id="ca" name="ca" required>
+
+                <label for="thal">Thalassemia:</label>
+                <input type="text" id="thal" name="thal" required>
+            </div>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
