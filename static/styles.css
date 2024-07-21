@@ -8,14 +8,11 @@ body {
     background-color: #f4f4f4;
     /* background: url('/static/images/bgimgheart.png') no-repeat center center fixed;
     background-size: cover; */
-    
 }
 
 h1 {
     text-align: center;
     margin-top: 20px;
-
-    
 }
 
 .container {
@@ -97,4 +94,49 @@ input[type="submit"]:hover {
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
+    .column {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    
+    .result-row {
+        flex-direction: column;
+    }
+    
+    .result-column {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 18px;
+    }
+    
+    input[type="text"] {
+        font-size: 14px;
+    }
+    
+    input[type="submit"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    
+    .result-column {
+        padding: 8px;
+    }
 }
